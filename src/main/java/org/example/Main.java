@@ -28,6 +28,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Vector;
+
+
+import javax.xml.ws.Endpoint;
+
 public class Main extends JFrame {
     int x;
     public final String windowTitle = "Integracja Systemów - Mikołaj Skrzypczyński";
@@ -90,6 +94,15 @@ public class Main extends JFrame {
 
         private HashSet<Integer> duplicatedRows = new HashSet<Integer>();
 
+
+
+    public static void main(String[] args) {
+
+        Main app = new Main();
+        Endpoint.publish("http://127.0.0.1:8888/laptops",
+                new LaptopsBean());
+        System.out.println("koniec funkcji main");
+    }
 
     void loadRowsToHashMap(){
         keyCounts.clear();
@@ -359,9 +372,7 @@ public class Main extends JFrame {
     }
 
 
-    public static void main(String[] args) {
-        Main app = new Main();
-    }
+
 
     void addRowToTable(){
         Object[] object = new Object[columnHeaders.length];

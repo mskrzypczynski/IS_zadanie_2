@@ -1,6 +1,9 @@
 package org.example;
 
-public class LaptopsWebService implements LaptopsWebServiceInterface{
+import javax.jws.WebService;
+
+@WebService(endpointInterface = "LaptopsWebServiceInterface")
+public class LaptopsBean implements LaptopsInterface {
     @Override
     public int getManufacturerLaptopNumber(String manufacturer) {
         return 0;
