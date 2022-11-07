@@ -3,6 +3,8 @@ package org.example;
 public class Laptop {
     private String manufacturer;
     private String screenSize;
+    private String resolution;
+
     private String screenType;
     private String screenTouchscreen;
     private String processorName;
@@ -99,5 +101,13 @@ public class Laptop {
     }
     public void setProcessorSpeed(String processorSpeed) {
         this.processorSpeed = processorSpeed;
+    }
+
+    public String getResolution() {
+        return resolution;
+    }
+
+    public void setResolution(String resolution) {
+        this.resolution = resolution;
     }
 }

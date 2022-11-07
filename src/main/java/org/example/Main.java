@@ -34,7 +34,7 @@ import javax.xml.ws.Endpoint;
 
 public class Main extends JFrame {
     int x;
-    public final String windowTitle = "Integracja Systemów - Mikołaj Skrzypczyński";
+    public final String windowTitle = "Integracja Systemów - Mikołaj Skrzypczyński - zadanie 3 - aplikacja serwerowa";
     public final int width = 1366;
     public final int height = 768;
     public final Dimension windowDimension = new Dimension(width,height);
